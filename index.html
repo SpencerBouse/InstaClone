@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html ng-app='routing'>
+
+<head>
+    <title>InstaClone</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+</head>
+
+<body ng-controller='mainController as vm'>
+    <header>
+      <h1><a ui-sref="home">InstaClone</a></h1>
+      <ul>
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="addImage">Add Image</a></li>
+      </ul>
+    </header>
+
+
+    <main class="container">
+        <div class="row">
+            <section class="col-md-12" ui-view='content'>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+      <h5>© Big Giant Heads</h5>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <script src='js/main.js'></script>
+    <script src='js/services/API.js'></script>
+    <script src='js/controllers/mainController.js'></script>
+
+</body>
+
+</html>

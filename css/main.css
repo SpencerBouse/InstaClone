@@ -1,0 +1,72 @@
+body {
+  color: #337AB7; }
+
+header {
+  text-align: center; }
+  header h1 {
+    font-family: 'Oleo Script', cursive;
+    margin: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px; }
+    header h1 a:hover {
+      text-decoration: none; }
+  header ul {
+    padding: 0px;
+    margin-left: 5px; }
+    header ul li {
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      font-size: 13px; }
+
+.homeWindow {
+  margin-bottom: 2em;
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 4;
+  -moz-column-gap: 10px;
+  column-count: 4;
+  column-gap: 10px; }
+  .homeWindow .imgBox {
+    max-width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+    background-color: black;
+    border-radius: 10px; }
+    .homeWindow .imgBox img {
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      max-width: 100% !important;
+      border-radius: 10px; }
+
+.imgBox img:hover {
+  opacity: 0.3; }
+
+.addForm {
+  display: inline-block; }
+  .addForm p {
+    margin: 0px;
+    padding: 0px; }
+  .addForm button {
+    margin-top: 5px; }
+
+.modal-body {
+  display: table;
+  clear: both; }
+  .modal-body div p {
+    font-size: 17px;
+    line-height: normal; }
+
+.heart {
+  float: left;
+  font-size: 20px;
+  margin-left: 10px; }
+
+.likes {
+  float: left;
+  margin-top: 10px;
+  margin-left: 3px; }

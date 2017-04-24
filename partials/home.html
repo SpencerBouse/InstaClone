@@ -1,0 +1,30 @@
+<div class="col-md-10 col-md-offset-1 homeWindow">
+  <div class="imgBox" ng-repeat="image in vm.data" data-toggle="modal" data-target="#myModal" ng-click="vm.modalOpen(image._id)">
+    <img src={{image.url}}>
+  </div>
+
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content" data="{{vm.imageID}}">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{vm.singleImage.title}}</h4>
+      </div>
+      <div class="modal-body">
+        <img src={{vm.singleImage.url}} class="col-md-8">
+        <div>
+          <p>{{vm.singleImage.description}}</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <i class="fa fa-heart heart" aria-hidden="true" ng-click="vm.upHearts(vm.singleImage)"></i>
+        <p class="likes">Likes: {{vm.singleImage.likes}}</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
